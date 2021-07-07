@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>vue中点击空白处隐藏弹出框 | Uphold</title>
+    <meta name="description" content="Just playing around">
+    <meta name="generator" content="VuePress 1.4.0">
+    <link rel="icon" href="alien.ico">
+    
+    <link rel="preload" href="/assets/css/0.styles.2a8ad169.css" as="style"><link rel="preload" href="/assets/js/app.5fafd8bf.js" as="script"><link rel="preload" href="/assets/js/2.501044bd.js" as="script"><link rel="preload" href="/assets/js/46.206c836d.js" as="script"><link rel="prefetch" href="/assets/js/10.ddecd3a3.js"><link rel="prefetch" href="/assets/js/11.ffafb239.js"><link rel="prefetch" href="/assets/js/12.c85714b2.js"><link rel="prefetch" href="/assets/js/13.84389217.js"><link rel="prefetch" href="/assets/js/14.87e92b39.js"><link rel="prefetch" href="/assets/js/15.656c6f40.js"><link rel="prefetch" href="/assets/js/16.992f86a9.js"><link rel="prefetch" href="/assets/js/17.c8180397.js"><link rel="prefetch" href="/assets/js/18.bb56cac3.js"><link rel="prefetch" href="/assets/js/19.376e4730.js"><link rel="prefetch" href="/assets/js/20.004b2657.js"><link rel="prefetch" href="/assets/js/21.413bd1ab.js"><link rel="prefetch" href="/assets/js/22.628d9a0a.js"><link rel="prefetch" href="/assets/js/23.77607ddb.js"><link rel="prefetch" href="/assets/js/24.2e21a0e7.js"><link rel="prefetch" href="/assets/js/25.7914bbf6.js"><link rel="prefetch" href="/assets/js/26.ff2f4d47.js"><link rel="prefetch" href="/assets/js/27.8c5ccdc9.js"><link rel="prefetch" href="/assets/js/28.b2f34d2b.js"><link rel="prefetch" href="/assets/js/29.cc6ac1d3.js"><link rel="prefetch" href="/assets/js/3.c558da6c.js"><link rel="prefetch" href="/assets/js/30.975f042b.js"><link rel="prefetch" href="/assets/js/31.5baddc64.js"><link rel="prefetch" href="/assets/js/32.7912cc15.js"><link rel="prefetch" href="/assets/js/33.2ddc4b73.js"><link rel="prefetch" href="/assets/js/34.6a3adabd.js"><link rel="prefetch" href="/assets/js/35.a3f3b71c.js"><link rel="prefetch" href="/assets/js/36.d034b57f.js"><link rel="prefetch" href="/assets/js/37.81444a2d.js"><link rel="prefetch" href="/assets/js/38.60ca28bc.js"><link rel="prefetch" href="/assets/js/39.648d2ad4.js"><link rel="prefetch" href="/assets/js/4.7a4d83b2.js"><link rel="prefetch" href="/assets/js/40.33962982.js"><link rel="prefetch" href="/assets/js/41.7ffe83ae.js"><link rel="prefetch" href="/assets/js/42.66318571.js"><link rel="prefetch" href="/assets/js/43.5887b78a.js"><link rel="prefetch" href="/assets/js/44.08d0ad9e.js"><link rel="prefetch" href="/assets/js/45.5fb0301b.js"><link rel="prefetch" href="/assets/js/47.9e7abe0b.js"><link rel="prefetch" href="/assets/js/48.64d4795b.js"><link rel="prefetch" href="/assets/js/49.16a7d3c0.js"><link rel="prefetch" href="/assets/js/5.bdf76989.js"><link rel="prefetch" href="/assets/js/50.8b90399e.js"><link rel="prefetch" href="/assets/js/51.8e284008.js"><link rel="prefetch" href="/assets/js/52.b572a3be.js"><link rel="prefetch" href="/assets/js/53.2999b7a7.js"><link rel="prefetch" href="/assets/js/54.0a800347.js"><link rel="prefetch" href="/assets/js/55.bd5dada4.js"><link rel="prefetch" href="/assets/js/56.4ca507b6.js"><link rel="prefetch" href="/assets/js/57.c58bc491.js"><link rel="prefetch" href="/assets/js/58.74a4d613.js"><link rel="prefetch" href="/assets/js/59.f89c8f0a.js"><link rel="prefetch" href="/assets/js/6.bbe12b09.js"><link rel="prefetch" href="/assets/js/60.2b4e7df6.js"><link rel="prefetch" href="/assets/js/61.0e18e3e1.js"><link rel="prefetch" href="/assets/js/7.710f8e90.js"><link rel="prefetch" href="/assets/js/8.f366d608.js"><link rel="prefetch" href="/assets/js/9.301ed09c.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.2a8ad169.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Uphold</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/note/" class="nav-link">
+  study
+</a></div><div class="nav-item"><a href="/vue/" class="nav-link router-link-active">
+  vue
+</a></div><div class="nav-item"><a href="/array/" class="nav-link">
+  数组练习
+</a></div><div class="nav-item"><a href="/javascript/" class="nav-link">
+  javascript
+</a></div><div class="nav-item"><a href="/typescript/" class="nav-link">
+  typescript
+</a></div><div class="nav-item"><a href="/webpack/" class="nav-link">
+  webpack
+</a></div><div class="nav-item"><a href="/nginx/" class="nav-link">
+  Nginx
+</a></div><div class="nav-item"><a href="https://github.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/note/" class="nav-link">
+  study
+</a></div><div class="nav-item"><a href="/vue/" class="nav-link router-link-active">
+  vue
+</a></div><div class="nav-item"><a href="/array/" class="nav-link">
+  数组练习
+</a></div><div class="nav-item"><a href="/javascript/" class="nav-link">
+  javascript
+</a></div><div class="nav-item"><a href="/typescript/" class="nav-link">
+  typescript
+</a></div><div class="nav-item"><a href="/webpack/" class="nav-link">
+  webpack
+</a></div><div class="nav-item"><a href="/nginx/" class="nav-link">
+  Nginx
+</a></div><div class="nav-item"><a href="https://github.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>VUE</span> <!----></p> <!----></section></li><li><a href="/vue/" class="sidebar-link">Vue打包文件浏览器存在缓存问题</a></li><li><a href="/vue/vue3.html" class="sidebar-link">Vue3新特性</a></li><li><a href="/vue/vuebuttonauth.html" class="sidebar-link">Vue中按钮权限设置</a></li><li><a href="/vue/vuex.html" class="sidebar-link">vuex</a></li><li><a href="/vue/vueantic.html" class="sidebar-link">vueantic</a></li><li><a href="/vue/vue_eslint.html" class="sidebar-link">vue_eslint</a></li><li><a href="/vue/vue_template_invscode.html" class="sidebar-link">vue_template_invscode</a></li><li><a href="/vue/vueplugin.html" class="sidebar-link">vueplugin</a></li><li><a href="/vue/vue_proxy.html" class="sidebar-link">vue_proxy</a></li><li><a href="/vue/vue_jwt.html" class="sidebar-link">vue_jwt</a></li><li><a href="/vue/vue_transition.html" class="sidebar-link">vue_transition</a></li><li><a href="/vue/funcomponent.html" class="sidebar-link">vue函数式组件</a></li><li><a href="/vue/axios_intercept.html" class="sidebar-link">axios全局拦截配置</a></li><li><a href="/vue/clickoutside.html" class="active sidebar-link">vue中点击空白处隐藏弹出框</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/vue/appendbody.html" class="sidebar-link">vue中将弹出框插入body中</a></li><li><a href="/vue/slideTransition.html" class="sidebar-link">页面切换动画</a></li><li><a href="/vue/vue_principle.html" class="sidebar-link">principle</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h3 id="vue中点击空白处隐藏弹出框"><a href="#vue中点击空白处隐藏弹出框" class="header-anchor">#</a> vue中点击空白处隐藏弹出框</h3> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token comment">&lt;!-------  自定义指令，原来的click方法不影响使用 ---------&gt;</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>show<span class="token punctuation">&quot;</span></span> <span class="token attr-name">v-show</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>show<span class="token punctuation">&quot;</span></span> <span class="token attr-name">v-clickoutside</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>handleClose<span class="token punctuation">&quot;</span></span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>showOrHide<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+            显示
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">const</span> clickoutside <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 初始化指令</span>
+    <span class="token function">bind</span><span class="token punctuation">(</span><span class="token parameter">el<span class="token punctuation">,</span> binding<span class="token punctuation">,</span> vnode</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">function</span> <span class="token function">documentHandler</span><span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment">// 这里判断点击的元素是否是本身，是本身，则返回</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>el<span class="token punctuation">.</span><span class="token function">contains</span><span class="token punctuation">(</span>e<span class="token punctuation">.</span>target<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            <span class="token comment">// 判断指令中是否绑定了函数</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>binding<span class="token punctuation">.</span>expression<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token comment">// 如果绑定了函数 则调用那个函数，此处binding.value就是handleClose方法</span>
+                binding<span class="token punctuation">.</span><span class="token function">value</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+        <span class="token comment">// 给当前元素绑定个私有变量，方便在unbind中可以解除事件监听</span>
+        el<span class="token punctuation">.</span>__vueClickOutside__ <span class="token operator">=</span> documentHandler<span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'click'</span><span class="token punctuation">,</span> documentHandler<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">unbind</span><span class="token punctuation">(</span><span class="token parameter">el<span class="token punctuation">,</span> binding</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 解除事件监听</span>
+        document<span class="token punctuation">.</span><span class="token function">removeEventListener</span><span class="token punctuation">(</span><span class="token string">'click'</span><span class="token punctuation">,</span> el<span class="token punctuation">.</span>__vueClickOutside__<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">delete</span> el<span class="token punctuation">.</span>__vueClickOutside__<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+    name<span class="token operator">:</span> <span class="token string">'HelloWorld'</span><span class="token punctuation">,</span>
+    <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token punctuation">{</span>
+            show<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    directives<span class="token operator">:</span> <span class="token punctuation">{</span>clickoutside<span class="token punctuation">}</span><span class="token punctuation">,</span>
+    methods<span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token function">handleClose</span><span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span>show <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token function">showOrHide</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+             <span class="token keyword">this</span><span class="token punctuation">.</span>show <span class="token operator">=</span> <span class="token operator">!</span><span class="token keyword">this</span><span class="token punctuation">.</span>show<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/vue/axios_intercept.html" class="prev">
+        axios全局拦截配置
+      </a></span> <span class="next"><a href="/vue/appendbody.html">
+        vue中将弹出框插入body中
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.5fafd8bf.js" defer></script><script src="/assets/js/2.501044bd.js" defer></script><script src="/assets/js/46.206c836d.js" defer></script>
+  </body>
+</html>
